@@ -9,6 +9,8 @@ var ground;
 var pig1,pig3;
 var log1,log3,log4,log5;
 
+var bird;
+
 function setup()
  {
   createCanvas(1200,400);
@@ -33,6 +35,9 @@ function setup()
   log4 = new Box(760,120,150,PI/7);
   log5 = new Log(870, 120, 150, -PI/7);
 
+  bird = new Bird(100,100);
+
+
  }
 function draw() 
 {
@@ -53,5 +58,7 @@ function draw()
   box5.display();
   log4.display();
   log5.display();
+
+  bird.display();
 
 }
